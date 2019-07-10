@@ -4,18 +4,18 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 10.0\n"
+"Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-16 15:42+0000\n"
-"PO-Revision-Date: 2018-01-16 17:52+0100\n"
-"Last-Translator: Lucas Huber <lucas.huber@org-it.ch>\n"
+"POT-Creation-Date: 2019-07-10 12:31+0000\n"
+"PO-Revision-Date: 2019-07-10 15:12+0200\n"
+"Last-Translator: Manuel Stahl <manuel.stahl@awesome-technologies.de>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: \n"
 "Language: de\n"
-"X-Generator: Poedit 2.0.5\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #. module: website_support
 #: model:mail.template,body_html:website_support.support_ticket_reply_wrapper_support
@@ -361,32 +361,37 @@ msgid "5 Star"
 msgstr "5 Star"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.support_ticket_view
+#: model_terms:ir.ui.view,arch_db:website_support.support_ticket_view
+msgid "<b>Add Attachments</b><br/>"
+msgstr "<b>Anhänge hinzufügen</b><br/>"
+
+#. module: website_support
+#: model_terms:ir.ui.view,arch_db:website_support.support_ticket_view
 msgid "<b>Add Comment</b><br/>"
 msgstr "<b>Kommentar hinzufügen</b><br/>"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.support_ticket_reporting
+#: model_terms:ir.ui.view,arch_db:website_support.support_ticket_reporting
 msgid "<b>All Time</b>"
 msgstr "<b>Alle Zeit</b>"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.support_ticket_view
+#: model_terms:ir.ui.view,arch_db:website_support.support_ticket_view
 msgid "<b>Category</b>"
 msgstr "<b>Kategorie</b>"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.support_ticket_reporting
+#: model_terms:ir.ui.view,arch_db:website_support.support_ticket_reporting
 msgid "<b>Last 30 Days</b><br/>"
 msgstr "<b>Letzte 30 Tage</b><br/>"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.support_ticket_reporting
+#: model_terms:ir.ui.view,arch_db:website_support.support_ticket_reporting
 msgid "<b>Last 7 Days</b><br/>"
 msgstr "<b>Letzte 7 Tage</b><br/>"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.support_ticket_view
+#: model_terms:ir.ui.view,arch_db:website_support.support_ticket_view
 msgid ""
 "<br/>\n"
 "                <b>Description</b><br/>"
@@ -395,7 +400,7 @@ msgstr ""
 "                <b>Beschreibung</b><br/>"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.support_ticket_view
+#: model_terms:ir.ui.view,arch_db:website_support.support_ticket_view
 msgid ""
 "<br/>\n"
 "                <b>State</b>"
@@ -404,7 +409,7 @@ msgstr ""
 "                <b>Status</b>"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.support_ticket_view
+#: model_terms:ir.ui.view,arch_db:website_support.support_ticket_view
 msgid ""
 "<br/>\n"
 "                <br/>\n"
@@ -420,44 +425,241 @@ msgid "A Support Ticket has been assigned to you"
 msgstr "Ihnen wurde ein Support-Ticket zugewiesen"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.support_submit_ticket
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_website_version
+msgid "A/B Testing"
+msgstr "A/B Test"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_category__access_group_ids
+msgid "Access Groups"
+msgstr "Zugriffsgruppen"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_account_taxcloud
+msgid "Account TaxCloud"
+msgstr "TaxCloud-Konto"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_account_accountant
+msgid "Accounting"
+msgstr "Buchhaltung"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__message_needaction
+msgid "Action Needed"
+msgstr "Aktion notwendig"
+
+#. module: website_support
+#: model_terms:ir.ui.view,arch_db:website_support.support_submit_ticket
 msgid "Add Attachments"
 msgstr "Anhänge hinzufügen"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_settings_allow_user_signup
+#: model:ir.model.fields,help:website_support.field_website_support_settings__group_stock_adv_location
+msgid ""
+"Add and customize route operations to process product moves in your warehouse(s): e.g. unload > quality control > stock for incoming products, pick > pack > ship for outgoing products. \n"
+" You can also set putaway strategies on warehouse locations in order to send incoming products into specific child locations straight away (e.g. specific bins, racks)."
+msgstr ""
+"Fügen Sie Routen-Vorgänge hinzu und passen Sie sie an, um Produktbuchungen in Ihrem Lager zu verarbeiten: z. B. Ausladen > Qualitätskontrolle > Lagerung bei eingehenden Produkten, Kommissionieren > Verpacken > Versenden bei ausgehenden Produkten. \n"
+" Sie können auch Entnahme-Strategien für Lagerorte festlegen, um eingehende Produkte direkt an bestimmte untergeordnete Lagerorte zu senden (z. B. in spezielle Schränke und Staufächer)."
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory__additional_field_ids
+msgid "Additional Fields"
+msgstr "Zusätzliche Felder"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla_alert__alert_time
+msgid "Alert Time"
+msgstr "Alarmzeitpunkt"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__alias_domain
+msgid "Alias Domain"
+msgstr "Alias-Domäne"
+
+#. module: website_support
+#: model_terms:ir.ui.view,arch_db:website_support.support_ticket_view_list
+msgid "All"
+msgstr "Alle"
+
+#. module: website_support
+#: model:ir.model.fields,help:website_support.field_website_support_sla_rule__condition_ids
+msgid "All conditions have to be fulfilled for the rule to apply, e.g. priority='High' AND category='Tech Support'"
+msgstr "Alle Bedingungen müssen erfüllt sein, damit die Regel zutrifft, z.B. Priorität='Hoch' AND Kategorie='Tech Support'"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_product_margin
+msgid "Allow Product Margin"
+msgstr "Produkt-Margin erlauben"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__allow_user_signup
 msgid "Allow User Signup"
 msgstr "Nutzeranmeldung zulassen"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.website_support_settings_view_form
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__allow_website_priority_set
+msgid "Allow Website Priority Set"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_account_check_printing
+msgid "Allow check printing and deposits"
+msgstr "Ermögliche Scheckdruck und -hinterlegung"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_google_calendar
+msgid "Allow the users to synchronize their calendar  with Google Calendar"
+msgstr "Benutzer können ihren Kalender mit dem Google Kalender synchronisieren"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_base_import
+msgid "Allow users to import data from CSV/XLS/XLSX/ODS files"
+msgstr "Datenimport aus CSV/XLS/XLSX/ODS-Datein zulassen"
+
+#. module: website_support
+#: model:ir.model.fields,help:website_support.field_website_support_settings__group_sale_pricelist
+msgid ""
+"Allows to manage different prices based on rules per category of customers.\n"
+"                Example: 10% for retailers, promotion of 5 EUR on this product, etc."
+msgstr ""
+"Erlaubt Ihnen die Verwaltung verschiedener Preise über Regeln für Kundengruppen.\n"
+"Beispiel: 10% für Wiederverkäufer, Werbenachlass von 5 EUR auf dieses Produkt, usw."
+
+#. module: website_support
+#: model:ir.model.fields,help:website_support.field_website_support_settings__group_multi_currency
+msgid "Allows to work in a multi currency environment"
+msgstr "Ermöglicht die Arbeit mit unterschiedlichen Währungen"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__group_analytic_accounting
+msgid "Analytic Accounting"
+msgstr "Kostenrechnung"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__group_analytic_tags
+msgid "Analytic Tags"
+msgstr "Kostenstellen Tags"
+
+#. module: website_support
+#: model_terms:ir.ui.view,arch_db:website_support.website_support_settings_view_form
 msgid "Apply"
 msgstr "Übernehmen"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_user_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__approval_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_compose__approval
+msgid "Approval"
+msgstr "Freigabe"
+
+#. module: website_support
+#: model:website.support.ticket.approval,name:website_support.approval_accepted
+#: model:website.support.ticket.state,name:website_support.website_ticket_state_approval_accepted
+msgid "Approval Accepted"
+msgstr "Freigabe erteilt"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__approval_message
+msgid "Approval Message"
+msgstr "Freigabenachricht"
+
+#. module: website_support
+#: model:website.support.ticket.approval,name:website_support.approval_rejected
+#: model:website.support.ticket.state,name:website_support.website_ticket_state_approval_rejected
+msgid "Approval Rejected"
+msgstr "Freigabe verweigert"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__approve_url
+msgid "Approve URL"
+msgstr "Freigabe URL"
+
+#. module: website_support
+#: model:ir.model.fields,help:website_support.field_website_support_settings__specific_user_account
+msgid "Are newly created user accounts website specific"
+msgstr "Sind neu erzeugte Benutzeraccounts webseitenspezifisch"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_account_asset
+msgid "Assets Management"
+msgstr "Anlagenverwaltung"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__user_id
 msgid "Assigned User"
 msgstr "Zugewiesener Benutzer"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_attachment_filename
-msgid "Attachment Filename"
-msgstr "Anhang Dateiname"
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_voip
+msgid "Asterisk (VoIP)"
+msgstr "Sternchen (VoIP)"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_attachment
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_google_drive
+msgid "Attach Google documents to any record"
+msgstr "Hängen Sie Google Dokumente an jeden beliebigen Datensatz an"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__message_attachment_count
+msgid "Attachment Count"
+msgstr "# Anhänge"
+
+#. module: website_support
+#: model_terms:ir.ui.view,arch_db:website_support.website_support_ticket_view_form
 msgid "Attachments"
 msgstr "Dateianhänge"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_settings_auto_send_survey
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__auto_send_survey
 msgid "Auto Send Survey"
 msgstr "Automatisch Umfrage senden"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.account_create
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_partner_autocomplete
+msgid "Auto-populate company data"
+msgstr "Unternehmensdaten automatisch ausfüllen"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_account_invoice_extract
+msgid "Automate Bill Processing"
+msgstr "automatischer Rechnungsprozess"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_currency_rate_live
+msgid "Automatic Currency Rates"
+msgstr "Automatische Währungssätze"
+
+#. module: website_support
+#: model:website.support.ticket.approval,name:website_support.awaiting_approval
+#: model:website.support.ticket.state,name:website_support.website_ticket_state_awaiting_approval
+msgid "Awaiting Approval"
+msgstr "Warte auf Freigabe"
+
+#. module: website_support
+#: model_terms:ir.ui.view,arch_db:website_support.account_create
 msgid "Back to Login"
 msgstr "Zurück zur Anmeldung"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_account_yodlee
+msgid "Bank Interface - Sync your bank feeds automatically"
+msgstr "Bankschnittstelle - Synchronisieren Sie Ihre Bankvorgänge automatisch"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__account_bank_reconciliation_start
+msgid "Bank Reconciliation Threshold"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_stock_barcode
+msgid "Barcode Scanner"
+msgstr "Barcode Lesegerät"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_stock_picking_batch
+msgid "Batch Pickings"
+msgstr "Stapel-Pickings"
 
 #. module: website_support
 #: model:website.support.ticket.category,name:website_support.website_support_billing_issues
@@ -465,265 +667,410 @@ msgid "Billing Issues"
 msgstr "Abrechnungsprobleme"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_email_template_preview_built_in
-#: model:ir.model.fields,field_description:website_support.field_mail_template_built_in
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_account_budget
+msgid "Budget Management"
+msgstr "Finanzmanagement"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_email_template_preview__built_in
+#: model:ir.model.fields,field_description:website_support.field_mail_template__built_in
 msgid "Built in"
 msgstr "Eingebaut"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_message_by
-#: model:ir.ui.view,arch_db:website_support.support_ticket_view_list
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__business_hours_id
+msgid "Business Hours"
+msgstr "Geschäftszeiten"
+
+#. module: website_support
+#: selection:website.support.sla.rule,countdown_condition:0
+msgid "Business Only"
+msgstr "Nur Unternehmen"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_message__by
+#: model_terms:ir.ui.view,arch_db:website_support.support_ticket_view
+#: model_terms:ir.ui.view,arch_db:website_support.support_ticket_view_list
 msgid "By"
 msgstr "Von"
 
 #. module: website_support
-#: model:ir.model.fields,help:website_support.field_medical_abstract_entity_stp_ids
-#: model:ir.model.fields,help:website_support.field_medical_center_stp_ids
-#: model:ir.model.fields,help:website_support.field_medical_patient_stp_ids
-#: model:ir.model.fields,help:website_support.field_medical_physician_stp_ids
-#: model:ir.model.fields,help:website_support.field_medical_practitioner_stp_ids
-#: model:ir.model.fields,help:website_support.field_res_partner_stp_ids
-#: model:ir.model.fields,help:website_support.field_res_users_stp_ids
-msgid "Can view support tickets from other contacts"
-msgstr "Kann Support-Tickets von anderen Kontakten anzeigen"
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__cdn_url
+msgid "CDN Base URL"
+msgstr "CDN Basis URL"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.website_support_settings_view_form
-#: model:ir.ui.view,arch_db:website_support.website_support_ticket_close_view_form
-#: model:ir.ui.view,arch_db:website_support.website_support_ticket_compose_view_form
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__cdn_filters
+msgid "CDN Filters"
+msgstr "CDN-Filter"
+
+#. module: website_support
+#: model:res.groups,comment:website_support.support_manager
+msgid "Can configure support settings"
+msgstr "Kann Supporteinstellungen bearbeiten"
+
+#. module: website_support
+#: model_terms:ir.ui.view,arch_db:website_support.website_support_settings_view_form
+#: model_terms:ir.ui.view,arch_db:website_support.website_support_ticket_close_view_form
+#: model_terms:ir.ui.view,arch_db:website_support.website_support_ticket_compose_view_form
 msgid "Cancel"
 msgstr "Abbrechen"
 
 #. module: website_support
-#: model:ir.ui.menu,name:website_support.website_support_ticket_categories_menu
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__tax_exigibility
+msgid "Cash Basis"
+msgstr "Nach vereinnahmten Entgelten"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__group_cash_rounding
+msgid "Cash Rounding"
+msgstr "Bargeld-Runden"
+
+#. module: website_support
+#: model:ir.ui.menu,name:website_support.website_support_ticket_category_menu
 msgid "Categories"
 msgstr "Kategorien"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_category
-#: model:ir.ui.view,arch_db:website_support.support_submit_ticket
-#: model:ir.ui.view,arch_db:website_support.support_ticket_view_list
-#: model:ir.ui.view,arch_db:website_support.website_support_ticket_view_search
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla_rule_condition__category_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__category_id
+#: model_terms:ir.ui.view,arch_db:website_support.support_submit_ticket
+#: model_terms:ir.ui.view,arch_db:website_support.support_ticket_view_list
+#: model_terms:ir.ui.view,arch_db:website_support.website_support_ticket_view_search
+#: selection:website.support.sla.rule.condition,type:0
 msgid "Category"
 msgstr "Kategorie"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_categories_name
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_category__name
 msgid "Category Name"
 msgstr "Kategorie Name"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_res_users_cat_user_ids
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_categories_cat_user_ids
+#: model:ir.model.fields,field_description:website_support.field_res_users__cat_user_ids
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_category__cat_user_ids
 msgid "Category Users"
 msgstr "Kategorie Benutzer"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_settings_change_user_email_template_id
+#: model_terms:ir.ui.view,arch_db:website_support.support_ticket_view_list
+msgid "Change Requests"
+msgstr "Änderungswünsche"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__change_user_email_template_id
 msgid "Change User Email Template"
 msgstr "Benutzer-E-Mail-Vorlage ändern"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_close_comment
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__channel
+msgid "Channel"
+msgstr "Kanal"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__close_comment
 msgid "Close Comment"
 msgstr "Kommentar bei Abschluss"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_close_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__close_date
+#: model_terms:ir.ui.view,arch_db:website_support.support_ticket_view_list
 msgid "Close Date"
 msgstr "Datum Beendigung"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_close_message
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_close__message
 msgid "Close Message"
 msgstr "Nachricht schliessen"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.website_support_ticket_close_view_form
-#: model:ir.ui.view,arch_db:website_support.website_support_ticket_view_form
+#: model_terms:ir.ui.view,arch_db:website_support.support_ticket_view
+#: model_terms:ir.ui.view,arch_db:website_support.website_support_ticket_close_view_form
+#: model_terms:ir.ui.view,arch_db:website_support.website_support_ticket_view_form
 msgid "Close Ticket"
 msgstr "Ticket schliessen"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_close_time
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__close_time
 msgid "Close Time"
 msgstr "Zeit der Schliessung"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_closed_by_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__closed_by_id
 msgid "Closed By"
 msgstr "Geschlossen von"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_priority_color
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_pad
+msgid "Collaborative Pads"
+msgstr "Plattform für Zusammenarbeit"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_priority__color
 msgid "Color"
 msgstr "Farbe"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.support_ticket_survey_page
+#: model_terms:ir.ui.view,arch_db:website_support.support_ticket_survey_page
 msgid "Comment"
 msgstr "Kommentar"
 
 #. module: website_support
-#: model:ir.model,name:website_support.model_res_company
-msgid "Companies"
-msgstr "Unternehmen"
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__invoice_reference_type
+msgid "Communication"
+msgstr "Kommunikation"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_company_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__company_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__company_id
 msgid "Company"
 msgstr "Unternehmen"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.account_create
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__resource_calendar_id
+msgid "Company Working Hours"
+msgstr "Betriebliche Arbeitszeiten"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__has_chart_of_accounts
+msgid "Company has a chart of accounts"
+msgstr "Das Unternehmen hat einen Kontenplan"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla_rule__condition_ids
+msgid "Conditions"
+msgstr "Bedingungen"
+
+#. module: website_support
+#: model:ir.ui.menu,name:website_support.website_support_config_parent_menu
+msgid "Configuration"
+msgstr "Konfiguration"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__has_social_network
+msgid "Configure Social Network"
+msgstr "Soziales Netzwerk konfigurieren"
+
+#. module: website_support
+#: model_terms:ir.ui.view,arch_db:website_support.account_create
 msgid "Confirm Password"
 msgstr "Passwort bestätigen"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_submit_partner_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__group_stock_tracking_owner
+msgid "Consignment"
+msgstr "Sendung"
+
+#. module: website_support
+#: model:ir.model,name:website_support.model_res_partner
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_submit__partner_id
 msgid "Contact"
 msgstr "Kontakt"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_submit_ticket_contact_ids
+#: model:ir.model.fields,field_description:website_support.field_website_support_department__submit_ticket_contact_ids
 msgid "Contact Submitted Tickets"
 msgstr "Kontakt Eingereichte Tickets"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.support_ticket_reporting
+#: model_terms:ir.ui.view,arch_db:website_support.support_ticket_reporting
 msgid "Contact Submitted Tickets (Top 5)"
 msgstr "Kontakt Eingereichte Tickets (Top 5)"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_submit_ticket_contact_month_ids
+#: model:ir.model.fields,field_description:website_support.field_website_support_department__submit_ticket_contact_month_ids
 msgid "Contact Submitted Tickets Month"
 msgstr "Kontakt Eingereichte Tickets Monat"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_submit_ticket_contact_week_ids
+#: model:ir.model.fields,field_description:website_support.field_website_support_department__submit_ticket_contact_week_ids
 msgid "Contact Submitted Tickets Week"
 msgstr "Kontakt Eingereichte Tickets Woche"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_partner_ids
+#: model:ir.model.fields,field_description:website_support.field_website_support_department__partner_ids
 msgid "Contacts"
 msgstr "Kontakte"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_page_content
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_message_content
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_page__content
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_message__content
 msgid "Content"
 msgstr "Inhalt"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_conversation_history
-msgid "Conversation History"
-msgstr "Konversationsgeschichte"
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__cdn_activated
+msgid "Content Delivery Network (CDN)"
+msgstr ""
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_subcategory_count
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_submit_count
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__conversation_history_ids
+msgid "Conversation History"
+msgstr "Gesprächsverlauf"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_subcategory__count
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_submit__count
 msgid "Count"
 msgstr "Zähle"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.support_help_pages
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla_rule__countdown_condition
+msgid "Countdown Condition"
+msgstr "Countdown Bedingung"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__website_country_group_ids
+msgid "Country Groups"
+msgstr "Ländergruppen"
+
+#. module: website_support
+#: model_terms:ir.ui.view,arch_db:website_support.support_help_pages
 msgid "Create Account"
 msgstr "Erstelle Account"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.support_ticket_view_list
-#: model:ir.ui.view,arch_db:website_support.website_support_ticket_view_graph
+#: model_terms:ir.ui.view,arch_db:website_support.support_ticket_view_list
+#: model_terms:ir.ui.view,arch_db:website_support.website_support_ticket_view_graph
 msgid "Create Date"
 msgstr "Erstellungsdatum"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_create_user_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_crm_reveal
+msgid "Create Leads/Opportunities from your website's traffic"
+msgstr ""
+
+#. module: website_support
+#: model_terms:ir.actions.act_window,help:website_support.website_support_ticket_state_action
+msgid "Create Support Ticket State"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__create_user_id
 msgid "Create User"
-msgstr "Erstelle neuen User"
+msgstr "Benutzer/in anlegen"
 
 #. module: website_support
-#: model:ir.actions.act_window,help:website_support.website_support_help_page_action
+#: model_terms:ir.actions.act_window,help:website_support.website_support_help_page_action
 msgid "Create a help page"
-msgstr "Erstellen Sie eine Hilfeseite"
+msgstr "Eine Hilfeseite erstellen"
 
 #. module: website_support
-#: model:ir.actions.act_window,help:website_support.website_support_help_groups_action
+#: model_terms:ir.actions.act_window,help:website_support.website_support_help_group_action
 msgid "Create a help page group"
-msgstr "Erstellen Sie eine Hilfeseitengruppe"
+msgstr "Eine Hilfeseitengruppe erstellen"
 
 #. module: website_support
-#: model:ir.actions.act_window,help:website_support.website_support_ticket_categories_action
+#: model_terms:ir.actions.act_window,help:website_support.website_support_sla_action
+msgid "Create new SLA"
+msgstr "Neues SLA erstellen"
+
+#. module: website_support
+#: model_terms:ir.actions.act_window,help:website_support.website_support_ticket_category_action
 msgid "Create new category"
-msgstr "Erstelle eine neue Kategorie"
+msgstr "Neue Kategorie erstellen"
 
 #. module: website_support
-#: model:ir.actions.act_window,help:website_support.website_support_department_action
+#: model_terms:ir.actions.act_window,help:website_support.website_support_department_action
 msgid "Create new department"
-msgstr "Erstellen Sie eine neue Abteilung"
+msgstr "Neue Abteilung erstellen"
 
 #. module: website_support
-#: model:ir.actions.act_window,help:website_support.website_support_ticket_subcategory_action
+#: model_terms:ir.actions.act_window,help:website_support.website_support_ticket_subcategory_action
 msgid "Create new sub category"
-msgstr "Erstellen Sie eine neue Unterkategorie"
-
-#. module: website_support
-#: model:ir.actions.act_window,help:website_support.website_support_ticket_states_action
-msgid "Create support ticket state"
-msgstr "Erstellen Sie einen Support-Ticket-Status"
+msgstr "Neue Unterkategorie erstellen"
 
 #. module: website_support
 #: model:res.groups,comment:website_support.support_group
 msgid "Created an account through the website, has no portal (/web) access"
-msgstr ""
-"Ein Konto über die Website erstellt, hat keinen Zugang zum Portal (/ Web)"
+msgstr "Ein Konto über die Website erstellt, hat keinen Zugang zum Portal (/ Web)"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_contact_create_uid
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_create_uid
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_role_create_uid
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_subcategory_create_uid
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_submit_create_uid
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_groups_create_uid
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_page_create_uid
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_page_feedback_create_uid
-#: model:ir.model.fields,field_description:website_support.field_website_support_settings_create_uid
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_categories_create_uid
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_close_create_uid
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_compose_create_uid
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_create_uid
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_message_create_uid
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_priority_create_uid
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_states_create_uid
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory_create_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_department__create_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_contact__create_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_role__create_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_subcategory__create_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_submit__create_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_group__create_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_page__create_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_page_feedback__create_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__create_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla__create_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla_alert__create_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla_rule__create_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla_rule_condition__create_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__create_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_approval__create_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_category__create_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_close__create_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_compose__create_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_field__create_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_message__create_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_priority__create_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_state__create_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory__create_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory_field__create_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory_field_value__create_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_tag__create_uid
 msgid "Created by"
 msgstr "Erstellt von"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_contact_create_date
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_create_date
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_role_create_date
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_subcategory_create_date
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_submit_create_date
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_groups_create_date
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_page_create_date
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_page_feedback_create_date
-#: model:ir.model.fields,field_description:website_support.field_website_support_settings_create_date
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_categories_create_date
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_close_create_date
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_compose_create_date
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_create_date
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_message_create_date
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_priority_create_date
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_states_create_date
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory_create_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_department__create_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_contact__create_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_role__create_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_subcategory__create_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_submit__create_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_group__create_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_page__create_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_page_feedback__create_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__create_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla__create_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla_alert__create_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla_rule__create_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla_rule_condition__create_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__create_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_approval__create_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_category__create_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_close__create_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_compose__create_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_field__create_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_message__create_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_priority__create_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_state__create_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory__create_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory_field__create_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory_field_value__create_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_tag__create_date
 msgid "Created on"
 msgstr "Angelegt am"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__currency_id
+msgid "Currency"
+msgstr "Währung"
+
+#. module: website_support
+#: model:ir.model.fields,help:website_support.field_website_support_settings__allow_website_priority_set
+msgid ""
+"Cusomters can set the priority of a ticket when submitting via the website form\n"
+"Partner Only = logged in user"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__report_footer
+msgid "Custom Report Footer"
+msgstr "Fußzeile benutzerdefinierter Bericht "
 
 #. module: website_support
 #: selection:website.support.ticket.message,by:0
 msgid "Customer"
 msgstr "Kunde"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__auth_signup_uninvited
+msgid "Customer Account"
+msgstr "Kundenkonto"
 
 #. module: website_support
 #: model:website.support.ticket.state,name:website_support.website_ticket_state_customer_closed
@@ -741,13 +1088,74 @@ msgid "Customer Support"
 msgstr "Helpdesk"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_contact_wsd_id
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_subcategory_wsd_id
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_subcategory_wsd_month_id
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_subcategory_wsd_week_id
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_submit_wsd_id
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_submit_wsd_month_id
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_submit_wsd_week_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_delivery_dhl
+msgid "DHL Connector"
+msgstr "DHL Konektor"
+
+#. module: website_support
+#: model_terms:ir.ui.view,arch_db:website_support.support_ticket_view_list
+msgid "Date"
+msgstr "Datum"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_res_partner__dedicated_support_user_id
+#: model:ir.model.fields,field_description:website_support.field_res_users__dedicated_support_user_id
+msgid "Dedicated Support User"
+msgstr "Zugeordneter Support-Benutzer"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__user_default_rights
+msgid "Default Access Rights"
+msgstr "Standard-Zugriffsrechte"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__crm_alias_prefix
+msgid "Default Alias Name for Leads"
+msgstr "Standard Alias für Interessenten"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__purchase_tax_id
+msgid "Default Purchase Tax"
+msgstr "Standardsteuer Einkauf"
+
+#. module: website_support
+#: model:ir.model.fields,help:website_support.field_website_support_settings__invoice_reference_type
+msgid "Default Reference Type on Invoices."
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__sale_tax_id
+msgid "Default Sale Tax"
+msgstr "Standardsteuer Verkauf"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__social_default_image
+msgid "Default Social Share Image"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__website_default_lang_id
+msgid "Default language"
+msgstr "Standardsprache"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__website_default_lang_code
+msgid "Default language code"
+msgstr "Standard Sprachcode"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__group_stock_tracking_lot
+msgid "Delivery Packages"
+msgstr "Lieferungen"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_contact__wsd_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_subcategory__wsd_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_subcategory__wsd_month_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_subcategory__wsd_week_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_submit__wsd_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_submit__wsd_month_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_submit__wsd_week_id
 msgid "Department"
 msgstr "Abteilung"
 
@@ -757,43 +1165,135 @@ msgid "Departments"
 msgstr "Abteilungen"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_description
-#: model:ir.ui.view,arch_db:website_support.support_submit_ticket
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla__description
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__description
+#: model_terms:ir.ui.view,arch_db:website_support.support_submit_ticket
+#: model_terms:ir.ui.view,arch_db:website_support.website_support_ticket_view_form
 msgid "Description"
 msgstr "Beschreibung"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_contact_display_name
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_display_name
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_role_display_name
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_subcategory_display_name
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_submit_display_name
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_groups_display_name
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_page_display_name
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_page_feedback_display_name
-#: model:ir.model.fields,field_description:website_support.field_website_support_settings_display_name
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_categories_display_name
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_close_display_name
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_compose_display_name
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_display_name
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_message_display_name
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_priority_display_name
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_states_display_name
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory_display_name
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__digest_id
+msgid "Digest Email"
+msgstr "E-Mail Übersicht"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__digest_emails
+msgid "Digest Emails"
+msgstr "Übersicht E-Mails"
+
+#. module: website_support
+#: model:ir.model.fields,help:website_support.field_website_support_settings__group_products_in_bills
+msgid "Disable this option to use a simplified versions of vendor bills, where products are hidden."
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__disapprove_url
+msgid "Disapprove URL"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__group_lot_on_delivery_slip
+msgid "Display Lots & Serial Numbers"
+msgstr "Chargen & Seriennummern anzeigen"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_department__display_name
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_contact__display_name
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_role__display_name
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_subcategory__display_name
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_submit__display_name
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_group__display_name
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_page__display_name
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_page_feedback__display_name
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__display_name
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla__display_name
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla_alert__display_name
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla_rule__display_name
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla_rule_condition__display_name
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__display_name
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_approval__display_name
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_category__display_name
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_close__display_name
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_compose__display_name
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_field__display_name
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_message__display_name
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_priority__display_name
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_state__display_name
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory__display_name
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory_field__display_name
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory_field_value__display_name
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_tag__display_name
 msgid "Display Name"
 msgstr "Anzeigename"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_compose_email
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_email
-#: model:ir.ui.view,arch_db:website_support.support_submit_ticket
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__qr_code
+msgid "Display SEPA QR code"
+msgstr "SEPA QR-Code anzeigen"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla_rule_condition__display_value
+msgid "Display Value"
+msgstr "Wert anzeigen"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__external_report_layout_id
+msgid "Document Template"
+msgstr "Dokumenten Vorlage"
+
+#. module: website_support
+#: selection:website.support.ticket.subcategory.field,type:0
+msgid "Dropbox"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory_field__dropbox_type
+msgid "Dropbox Type"
+msgstr "Dropbox Typ"
+
+#. module: website_support
+#: model:ir.model.fields,help:website_support.field_website_support_sla_rule__countdown_condition
+msgid "During what time do we start counting down the SLA timer"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_account_reports
+msgid "Dynamic Reports"
+msgstr "Dynamische Berichte"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_l10n_eu_service
+msgid "EU Digital Goods VAT"
+msgstr "EU-MwSt. Digitale Produkte"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_delivery_easypost
+msgid "Easypost Connector"
+msgstr "Easypost Konnektor"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__email
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_compose__email
+#: model_terms:ir.ui.view,arch_db:website_support.support_submit_ticket
+#: selection:website.support.sla.alert,type:0
 msgid "Email"
 msgstr "E-Mail"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_settings_email_default_category_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla__alert_ids
+msgid "Email Alerts"
+msgstr "E-Mail Alarme"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__email_default_category_id
 msgid "Email Default Category"
 msgstr "E-Mail-Standardkategorie"
+
+#. module: website_support
+#: model_terms:ir.ui.view,arch_db:website_support.website_support_settings_view_form
+msgid "Email Template Settings"
+msgstr "E-Mail-Vorlageeinstellungen"
 
 #. module: website_support
 #: model:ir.model,name:website_support.model_mail_template
@@ -801,64 +1301,219 @@ msgid "Email Templates"
 msgstr "E-Mail-Vorlagen"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_page_feedback_ids
-#: model:ir.ui.view,arch_db:website_support.help_page
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__auth_signup_reset_password
+msgid "Enable password reset from Login page"
+msgstr "Passwort zurücksetzen von der Login-Seite erlauben"
+
+#. module: website_support
+#: selection:website.support.settings,allow_website_priority_set:0
+msgid "Everyone"
+msgstr "Jeder"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__currency_exchange_journal_id
+msgid "Exchange Gain or Loss Journal"
+msgstr "Journal Kursgewinn oder Verlust"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_product_expiry
+msgid "Expiration Dates"
+msgstr "Ablaufdaten"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__external_email_server_default
+msgid "External Email Servers"
+msgstr "Externe E-Mail-Server"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__extra_field_ids
+msgid "Extra Details"
+msgstr ""
+
+#. module: website_support
+#: model_terms:ir.ui.view,arch_db:website_support.website_support_ticket_view_form
+msgid "Extra Fields"
+msgstr "Extra Felder"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__social_facebook
+msgid "Facebook Account"
+msgstr "Facebook Konto"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__fail_counter
+msgid "Fail Mail"
+msgstr "Fehlgeschlagene E-Mails"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__favicon
+msgid "Favicon"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_delivery_fedex
+msgid "FedEx Connector"
+msgstr "FedEx Konektor"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_page__feedback_ids
+#: model_terms:ir.ui.view,arch_db:website_support.help_page
 msgid "Feedback"
-msgstr "Feedback"
+msgstr ""
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_page_feedback_average
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_page__feedback_average
 msgid "Feedback Average Rating"
-msgstr "Feedback Durchschnittliche Bewertung"
+msgstr "Durchschnittliche Feedbackbewertung"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_page_feedback_count
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_page__feedback_count
 msgid "Feedback Count"
 msgstr "Feedback Anzahl"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_page_feedback_feedback_rating
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_page_feedback__feedback_rating
 msgid "Feedback Rating"
-msgstr "Feedback Rating"
+msgstr "Feedback Bewertung"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_page_feedback_feedback_text
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_page_feedback__feedback_text
 msgid "Feedback Text"
 msgstr "Feedback Text"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.support_ticket_view
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__group_fiscal_year
+msgid "Fiscal Years"
+msgstr "Steuerjahr"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_account_reports_followup
+msgid "Follow-up Levels"
+msgstr "Mahnstufen"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__message_follower_ids
+msgid "Followers"
+msgstr "Abonnenten"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Abonnenten (Kanäle)"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Abonnenten (Partner)"
+
+#. module: website_support
+#: model:ir.model.fields,help:website_support.field_website_support_settings__report_footer
+msgid "Footer text displayed at the bottom of all reports."
+msgstr "Fußzeilentext, der auf allen Berichten angezeigt wird."
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_project_forecast
+msgid "Forecasts"
+msgstr "Prognosen"
+
+#. module: website_support
+#: model_terms:ir.ui.view,arch_db:website_support.support_ticket_view
 msgid "From"
 msgstr "Von"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_page_group_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__social_github
+msgid "GitHub Account"
+msgstr "GitHub Konto"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__has_google_analytics
+msgid "Google Analytics"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__has_google_analytics_dashboard
+msgid "Google Analytics Dashboard"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__google_analytics_key
+msgid "Google Analytics Key"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__google_management_client_id
+msgid "Google Client ID"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__google_management_client_secret
+msgid "Google Client Secret"
+msgstr "Google Client zurück"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__has_google_maps
+msgid "Google Maps"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__google_maps_api_key
+msgid "Google Maps API Key"
+msgstr "Google Maps-API-Schlüssel"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_google_spreadsheet
+msgid "Google Spreadsheet"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__google_recaptcha_active
+msgid "Google reCAPTCHA Active"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__social_googleplus
+msgid "Google+ Account"
+msgstr "Google + Account"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_page__group_id
 msgid "Group"
 msgstr "Gruppe"
 
 #. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__has_accounting_entries
+msgid "Has Accounting Entries"
+msgstr "Hat Buchungsposten"
+
+#. module: website_support
+#: model:res.groups,comment:website_support.support_staff
+msgid "Has the ability the view and answer support tickets but not configure"
+msgstr ""
+
+#. module: website_support
 #. openerp-web
-#: code:addons/website_support/static/src/js/website_support.editor.js:46
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_groups_name
+#: code:addons/website_support/static/src/js/website_support.editor.js:29
+#: code:addons/website_support/static/src/js/website_support.editor.js:74
 #, python-format
 msgid "Help Group"
 msgstr "Helpdesk Gruppe"
 
 #. module: website_support
-#: model:ir.ui.menu,name:website_support.website_support_help_groups_menu
+#: model:ir.ui.menu,name:website_support.website_support_help_group_menu
 msgid "Help Groups"
 msgstr "Helpdesk Gruppen"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_page_feedback_hp_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_page_feedback__hp_id
 msgid "Help Page"
-msgstr "Helpdesk  Seite"
+msgstr "Helpdesk Seite"
 
 #. module: website_support
 #: model:ir.ui.menu,name:website_support.website_support_help_page_menu
-#: model:ir.ui.view,arch_db:website_support.support_help_pages
+#: model_terms:ir.ui.view,arch_db:website_support.support_help_pages
 msgid "Help Pages"
-msgstr "Hilfeseiten"
+msgstr "Helpdesk Seiten"
 
 #. module: website_support
 #: model:website.support.ticket.priority,name:website_support.high
@@ -866,139 +1521,356 @@ msgid "High"
 msgstr "Hoch"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_contact_id
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_id
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_role_id
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_subcategory_id
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_submit_id
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_groups_id
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_page_feedback_id
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_page_id
-#: model:ir.model.fields,field_description:website_support.field_website_support_settings_id
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_categories_id
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_close_id
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_compose_id
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_id
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_message_id
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_priority_id_8681
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_states_id
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_department__id
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_contact__id
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_role__id
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_subcategory__id
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_submit__id
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_group__id
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_page__id
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_page_feedback__id
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__id
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla__id
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla_alert__id
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla_rule__id
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla_rule_condition__id
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__id
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_approval__id
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_category__id
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_close__id
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_compose__id
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_field__id
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_message__id
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_priority__id
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_state__id
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory__id
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory_field__id
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory_field_value__id
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_tag__id
 msgid "ID"
-msgstr "ID"
+msgstr ""
 
 #. module: website_support
-#: model:ir.model.fields,help:website_support.field_website_support_ticket_unattended
-msgid ""
-"In 'Open' state or 'Customer Replied' state taken into consideration name "
-"changes"
-msgstr "Im Status 'Offen' oder 'Kundenbeantwortet' ändert sich ev. der Name"
+#: model:ir.model.fields,help:website_support.field_website_support_sla__rule_ids
+msgid "If a ticket matches mutiple rules then the one with the lowest response time is used"
+msgstr ""
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_department___last_update
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_contact___last_update
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_role___last_update
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_subcategory___last_update
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_submit___last_update
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_groups___last_update
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_page___last_update
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_page_feedback___last_update
-#: model:ir.model.fields,field_description:website_support.field_website_support_settings___last_update
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket___last_update
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_categories___last_update
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_close___last_update
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_compose___last_update
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_message___last_update
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_priority___last_update
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_states___last_update
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory___last_update
+#: model:ir.model.fields,help:website_support.field_website_support_ticket__message_unread
+msgid "If checked new messages require your attention."
+msgstr "Falls markiert, benötigen neue Nachrichten Ihre Kenntnisnahme."
+
+#. module: website_support
+#: model:ir.model.fields,help:website_support.field_website_support_ticket__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Falls markiert, benötigen neue Nachrichten Ihre Kenntnisnahme."
+
+#. module: website_support
+#: model:ir.model.fields,help:website_support.field_website_support_ticket__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Das Senden mancher Nachrichten ist fehlgeschlagen wenn dieses Fenster angekreuzt ist."
+
+#. module: website_support
+#: model:ir.model.fields,help:website_support.field_website_support_settings__social_default_image
+msgid "If set, replaces the company logo as the default social share image."
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,help:website_support.field_website_support_sla_rule__response_time
+msgid "If the support ticket matches the conditions then it has to be completed within this amount of time, e.g. high priority tech support ticket within 1 hour"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,help:website_support.field_website_support_ticket_state__unattended
+msgid "If ticked, tickets in this state will appear by default"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,help:website_support.field_website_support_settings__alias_domain
+msgid "If you have setup a catch-all email domain redirected to the Odoo server, enter the domain name here."
+msgstr "Wenn Sie eine Catch-All E-Mail-Aliasanschrift eingerichtet haben, geben Sie hier die Domain an."
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_group__image
+msgid "Image"
+msgstr "Bild"
+
+#. module: website_support
+#: selection:website.support.settings,module_procurement_jit:0
+msgid "Immediately after sales order confirmation"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_account_bank_statement_import_qif
+msgid "Import .qif files"
+msgstr "Importiere .qif-Dateien"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_account_bank_statement_import_csv
+msgid "Import in .csv format"
+msgstr "Importiere im .csv Format"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_account_bank_statement_import_ofx
+msgid "Import in .ofx format"
+msgstr "Importiere im .ofx-Format"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_account_bank_statement_import_camt
+msgid "Import in CAMT.053 format"
+msgstr "In CAMT.053-Format importieren"
+
+#. module: website_support
+#: model:ir.model.fields,help:website_support.field_website_support_ticket__unattended
+msgid "In 'Open' state or 'Customer Replied' state taken into consideration name changes"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__social_instagram
+msgid "Instagram Account"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_hr_recruitment_survey
+msgid "Interview Forms"
+msgstr "Vorstellungsgesprächsarten"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_account_intrastat
+msgid "Intrastat"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_account_payment
+msgid "Invoice Online Payment"
+msgstr "Rechnung online bezahlen"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__message_is_follower
+msgid "Is Follower"
+msgstr "Ist ein Abonnent"
+
+#. module: website_support
+#: model:ir.model.fields,help:website_support.field_website_support_ticket__sla_alert_ids
+msgid "Keep record of SLA alerts sent so we do not resend them"
+msgstr ""
+
+#. module: website_support
+#: selection:website.support.settings,product_weight_in_lbs:0
+msgid "Kilogram"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_auth_ldap
+msgid "LDAP Authentication"
+msgstr "LDAP-Authentifizierung"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__ldaps
+msgid "LDAP Parameters"
+msgstr "LDAP Parameter"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_field__name
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory_field__name
+msgid "Label"
+msgstr "Buchungstext"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__language_ids
+msgid "Languages"
+msgstr "Sprachen"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_department____last_update
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_contact____last_update
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_role____last_update
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_subcategory____last_update
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_submit____last_update
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_group____last_update
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_page____last_update
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_page_feedback____last_update
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings____last_update
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla____last_update
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla_alert____last_update
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla_rule____last_update
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla_rule_condition____last_update
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket____last_update
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_approval____last_update
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_category____last_update
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_close____last_update
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_compose____last_update
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_field____last_update
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_message____last_update
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_priority____last_update
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_state____last_update
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory____last_update
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory_field____last_update
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory_field_value____last_update
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_tag____last_update
 msgid "Last Modified on"
 msgstr "Zuletzt geändert am"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_contact_write_uid
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_role_write_uid
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_subcategory_write_uid
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_submit_write_uid
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_write_uid
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_groups_write_uid
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_page_feedback_write_uid
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_page_write_uid
-#: model:ir.model.fields,field_description:website_support.field_website_support_settings_write_uid
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_categories_write_uid
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_close_write_uid
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_compose_write_uid
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_message_write_uid
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_priority_write_uid
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_states_write_uid
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory_write_uid
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_write_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_department__write_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_contact__write_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_role__write_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_subcategory__write_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_submit__write_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_group__write_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_page__write_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_page_feedback__write_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__write_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla__write_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla_alert__write_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla_rule__write_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla_rule_condition__write_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__write_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_approval__write_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_category__write_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_close__write_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_compose__write_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_field__write_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_message__write_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_priority__write_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_state__write_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory__write_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory_field__write_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory_field_value__write_uid
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_tag__write_uid
 msgid "Last Updated by"
 msgstr "Zuletzt aktualisiert durch"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_contact_write_date
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_role_write_date
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_subcategory_write_date
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_submit_write_date
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_write_date
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_groups_write_date
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_page_feedback_write_date
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_page_write_date
-#: model:ir.model.fields,field_description:website_support.field_website_support_settings_write_date
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_categories_write_date
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_close_write_date
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_compose_write_date
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_message_write_date
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_priority_write_date
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_states_write_date
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory_write_date
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_write_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_department__write_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_contact__write_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_role__write_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_subcategory__write_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_submit__write_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_group__write_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_page__write_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_page_feedback__write_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__write_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla__write_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla_alert__write_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla_rule__write_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla_rule_condition__write_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__write_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_approval__write_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_category__write_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_close__write_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_compose__write_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_field__write_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_message__write_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_priority__write_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_state__write_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory__write_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory_field__write_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory_field_value__write_date
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_tag__write_date
 msgid "Last Updated on"
 msgstr "Zuletzt aktualisiert am"
 
 #. module: website_support
-#: model:website.support.ticket.priority,name:website_support.low
-msgid "Low"
-msgstr "Tief"
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__group_use_lead
+msgid "Leads"
+msgstr "Interessenten"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_compose_template_id
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_states_mail_template_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__show_line_subtotals_tax_selection
+msgid "Line Subtotals Tax Display"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_website_links
+msgid "Link Trackers"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__social_linkedin
+msgid "LinkedIn Account"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__group_stock_production_lot
+msgid "Lots & Serial Numbers"
+msgstr "Los- und Seriennummern"
+
+#. module: website_support
+#: model:website.support.ticket.priority,name:website_support.low
+msgid "Low"
+msgstr "Niedrig"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_close__template_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_compose__template_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_state__mail_template_id
 msgid "Mail Template"
-msgstr "Mail Template"
+msgstr "E-Mail-Vorlage"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Hauptanhänge"
+
+#. module: website_support
+#: model:ir.model.fields,help:website_support.field_website_support_settings__currency_id
+msgid "Main currency of the company."
+msgstr "Hauptwährung des Unternehmens."
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_inter_company_rules
+msgid "Manage Inter Company"
+msgstr "Inter-Company verwalten"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__group_multi_company
+msgid "Manage multiple companies"
+msgstr "Multi-Unternehmen Verwaltung"
 
 #. module: website_support
 #: model:website.support.department.role,name:website_support.website_support_department_manager
 msgid "Manager"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_department__manager_ids
+msgid "Managers"
 msgstr "Manager"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_manager_ids
-msgid "Managers"
-msgstr "Managers"
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__generate_lead_from_alias
+msgid "Manual Assignation of Emails"
+msgstr "Manuelle E-Mail-Zuordnung"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_settings_max_ticket_attachment_filesize
+#: selection:website.support.settings,module_procurement_jit:0
+msgid "Manually or based on automatic scheduler"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__max_ticket_attachment_filesize
 msgid "Max Ticket Attachment Filesize (KB)"
 msgstr "Max Ticketanhang Dateigrösse (KB)"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_settings_max_ticket_attachments
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__max_ticket_attachments
 msgid "Max Ticket Attachments"
-msgstr "Max Anzahl Ticket Anhänge"
+msgstr ""
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_attachment_ids
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__attachment_ids
 msgid "Media Attachments"
 msgstr "Media Anhänge"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.support_ticket_view
+#: model_terms:ir.ui.view,arch_db:website_support.support_ticket_view
+#: model_terms:ir.ui.view,arch_db:website_support.support_ticket_view_list
 msgid "Message"
 msgstr "Nachricht"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_compose_body
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_compose__body
 msgid "Message Body"
 msgstr "Nachrichtentext"
 
@@ -1008,39 +1880,67 @@ msgid "Moderately"
 msgstr "Moderiert"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.support_ticket_view_list
-msgid "My Support Tickets"
-msgstr "Meine Support Tickets"
+#: model_terms:ir.ui.view,arch_db:website_support.support_help_pages
+msgid "More"
+msgstr "Mehr"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.support_help_pages
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__group_multi_currency
+msgid "Multi-Currencies"
+msgstr "Mehrere Währungen"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__group_stock_adv_location
+msgid "Multi-Step Routes"
+msgstr "Mehrstufige Routen"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__group_stock_multi_warehouses
+msgid "Multi-Warehouses"
+msgstr "Mehrere Lager"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__group_multi_website
+msgid "Multi-website"
+msgstr ""
+
+#. module: website_support
+#: model_terms:ir.ui.view,arch_db:website_support.support_ticket_view_list
+msgid "My Support Tickets"
+msgstr "Meine Support-Tickets"
+
+#. module: website_support
+#: model_terms:ir.ui.view,arch_db:website_support.support_help_pages
 msgid "My Tickets"
 msgstr "Meine Tickets"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_name
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_role_name
-#: model:ir.ui.view,arch_db:website_support.support_submit_ticket
+#. openerp-web
+#: code:addons/website_support/static/src/js/website_support.editor.js:41
+#: model:ir.model.fields,field_description:website_support.field_website_support_department__name
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_role__name
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_group__name
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla__name
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla_rule__name
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_approval__name
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory_field_value__name
+#: model_terms:ir.ui.view,arch_db:website_support.support_submit_ticket
+#, python-format
 msgid "Name"
-msgstr "Name"
-
-#. module: website_support
-#: model:ir.ui.view,arch_db:website_support.content_new_help
-msgid "New Event"
-msgstr "Neuer Anlass"
+msgstr ""
 
 #. module: website_support
 #. openerp-web
-#: code:addons/website_support/static/src/js/website_support.editor.js:45
-#: model:ir.ui.view,arch_db:website_support.content_new_help
+#: code:addons/website_support/static/src/js/website_support.editor.js:73
+#: model_terms:ir.ui.view,arch_db:website_support.content_new_help
 #, python-format
 msgid "New Help Group"
 msgstr "Neue Hilfeseite Gruppe"
 
 #. module: website_support
 #. openerp-web
-#: code:addons/website_support/static/src/js/website_support.editor.js:16
-#: model:ir.ui.view,arch_db:website_support.content_new_help
+#: code:addons/website_support/static/src/js/website_support.editor.js:28
+#: model_terms:ir.ui.view,arch_db:website_support.content_new_help
 #, python-format
 msgid "New Help Page"
 msgstr "Neue Hilfeseite Seite"
@@ -1051,41 +1951,86 @@ msgid "New Support Ticket for your category"
 msgstr "Neues Support-Ticket für Ihre Kategorie"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_medical_abstract_entity_new_support_ticket_count
-#: model:ir.model.fields,field_description:website_support.field_medical_center_new_support_ticket_count
-#: model:ir.model.fields,field_description:website_support.field_medical_patient_new_support_ticket_count
-#: model:ir.model.fields,field_description:website_support.field_medical_physician_new_support_ticket_count
-#: model:ir.model.fields,field_description:website_support.field_medical_practitioner_new_support_ticket_count
-#: model:ir.model.fields,field_description:website_support.field_res_partner_new_support_ticket_count
-#: model:ir.model.fields,field_description:website_support.field_res_users_new_support_ticket_count
+#: model:ir.model.fields,field_description:website_support.field_res_partner__new_support_ticket_count
+#: model:ir.model.fields,field_description:website_support.field_res_users__new_support_ticket_count
 msgid "New Ticket Count"
 msgstr "Neue Ticketanzahl"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_res_company_next_support_ticket_number
-msgid "Next Support Ticket Number"
-msgstr "Nächste Support Ticket Nummer"
+#: model:website.support.ticket.approval,name:website_support.no_approval_required
+msgid "No Approval Required"
+msgstr "Keine Freigabe benötigt"
 
 #. module: website_support
-#: model:ir.actions.act_window,help:website_support.website_support_ticket_action
-#: model:ir.actions.act_window,help:website_support.website_support_ticket_action_partner
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__use_propagation_minimum_delta
+msgid "No Rescheduling Propagation"
+msgstr "Keine Übertragung von Umplanungen"
+
+#. module: website_support
+#: model_terms:ir.actions.act_window,help:website_support.website_support_ticket_tag_action
+msgid "No Support Tickets Tags found"
+msgstr ""
+
+#. module: website_support
+#: model_terms:ir.actions.act_window,help:website_support.website_support_ticket_action
+#: model_terms:ir.actions.act_window,help:website_support.website_support_ticket_action_partner
 msgid "No Support Tickets found"
 msgstr "Keine Support-Tickets gefunden"
 
 #. module: website_support
-#: model:ir.actions.act_window,help:website_support.website_support_ticket_priority_action
+#: model_terms:ir.actions.act_window,help:website_support.website_support_ticket_priority_action
 msgid "No Support Tickets priorities found"
 msgstr "Keine Support-Tickets-Prioritäten gefunden"
 
 #. module: website_support
 #: model:website.support.ticket.priority,name:website_support.normal
 msgid "Normal"
-msgstr "Normal"
+msgstr ""
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_groups_page_count
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Anzahl der Aktionen"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_group__page_count
 msgid "Number of Pages"
 msgstr "Seitenzahl"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__message_has_error_counter
+msgid "Number of error"
+msgstr "Fehlernummer"
+
+#. module: website_support
+#: model:ir.model.fields,help:website_support.field_website_support_sla_alert__alert_time
+msgid "Number of hours before or after SLA expiry to send alert"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__language_count
+msgid "Number of languages"
+msgstr "Anzahl der Sprachen"
+
+#. module: website_support
+#: model:ir.model.fields,help:website_support.field_website_support_ticket__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Anzahl der Nachrichten, die eine Aktion erfordern"
+
+#. module: website_support
+#: model:ir.model.fields,help:website_support.field_website_support_ticket__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Anzahl der Nachrichten mit einem Fehler beim Senden."
+
+#. module: website_support
+#: model:ir.model.fields,help:website_support.field_website_support_ticket__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Anzahl ungelesener Nachrichten"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_website_hr_recruitment
+msgid "Online Posting"
+msgstr "Online-Posting"
 
 #. module: website_support
 #: model:website.support.ticket.state,name:website_support.website_ticket_state_open
@@ -1093,51 +2038,116 @@ msgid "Open"
 msgstr "Offen"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_page_name
+#: model_terms:ir.ui.view,arch_db:website_support.website_support_ticket_view_form
+msgid "Open / Reply"
+msgstr "Öffnen / Antworten"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_page__name
 msgid "Page Name"
 msgstr "Seiten Name"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_page_url
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_page__url
 msgid "Page URL"
 msgstr "Seiten URL"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_groups_page_ids
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_group__page_ids
 msgid "Pages"
 msgstr "Seiten"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory_parent_category_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__paperformat_id
+msgid "Paper format"
+msgstr "Papierformat"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory__parent_category_id
 msgid "Parent Category"
 msgstr "Oberkategorie"
 
 #. module: website_support
-#: model:ir.model,name:website_support.model_res_partner
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_compose_partner_id
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_partner_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__parent_company_id
+msgid "Parent Company"
+msgstr "Stamm-Unternehmen"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__partner_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_compose__partner_id
 msgid "Partner"
 msgstr "Partner"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.account_create
+#: selection:website.support.settings,allow_website_priority_set:0
+msgid "Partner Only"
+msgstr "Nur Partner"
+
+#. module: website_support
+#: model_terms:ir.ui.view,arch_db:website_support.account_create
 msgid "Password"
 msgstr "Passwort"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_person_name
-msgid "Person Name"
-msgstr "Personen Name"
+#: model_terms:ir.ui.view,arch_db:website_support.website_support_ticket_view_form
+msgid "Pause SLA"
+msgstr ""
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.support_ticket_survey_page
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__person_name
+msgid "Person Name"
+msgstr "Personenname"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_crm_phone_validation
+msgid "Phone Formatting"
+msgstr "Rufnummerndarstellung"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_account_plaid
+msgid "Plaid Connector"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__planned_time
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_compose__planned_time
+msgid "Planned Time"
+msgstr "Geplante Zeit"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__planned_time_format
+msgid "Planned Time Format"
+msgstr "Geplante Zeit (Format)"
+
+#. module: website_support
+#: model_terms:ir.ui.view,arch_db:website_support.support_ticket_survey_page
 msgid "Please give us feedback on our support service"
 msgstr "Bitte geben Sie uns Feedback zu unserem Support-Service"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_portal_access_key
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__portal_access_key
 msgid "Portal Access Key"
-msgstr "Portal Access Key"
+msgstr ""
+
+#. module: website_support
+#: selection:website.support.settings,product_weight_in_lbs:0
+msgid "Pound"
+msgstr "Pfund"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__invoice_is_print
+msgid "Print"
+msgstr "Drucken"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__snailmail_duplex
+msgid "Print Both sides"
+msgstr "Beidseitig Drucken"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__snailmail_color
+msgid "Print In Color"
+msgstr "Farbig Drucken"
 
 #. module: website_support
 #: model:ir.ui.menu,name:website_support.website_support_ticket_priority_menu
@@ -1145,83 +2155,191 @@ msgid "Priorities"
 msgstr "Prioritäten"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_priority_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla_rule_condition__priority_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__priority_id
+#: model_terms:ir.ui.view,arch_db:website_support.support_submit_ticket
+#: selection:website.support.sla.rule.condition,type:0
 msgid "Priority"
 msgstr "Priorität"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_priority_name
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_priority__name
 msgid "Priority Name"
 msgstr "Priorität Name"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_groups_partner_ids
-msgid "Privilege Contacts"
-msgstr "Privilegien Kontakte"
-
-#. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_groups_group_ids
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_group__group_ids
 msgid "Privilege Groups"
-msgstr "Privilegien Gruppen"
+msgstr "Berechtigungsgruppen"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_groups_website_published
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_page_website_published
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__group_stock_packaging
+msgid "Product Packagings"
+msgstr "Produktverpackung"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_group__website_published
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_page__website_published
 msgid "Published"
 msgstr "Veröffentlicht"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.help_page
+#: model_terms:ir.ui.view,arch_db:website_support.help_page
 msgid "Rating"
 msgstr "Bewertung"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.website_support_ticket_view_form
+#: model_terms:ir.ui.view,arch_db:website_support.website_support_ticket_view_form
 msgid "Reply"
 msgstr "Antworten"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.support_ticket_reporting
+#: model_terms:ir.ui.view,arch_db:website_support.support_ticket_reporting
 msgid "Report"
 msgstr "Bericht"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.support_help_pages
+#: model_terms:ir.ui.view,arch_db:website_support.support_help_pages
 msgid "Reporting"
 msgstr "Berichtswesen"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_contact_role
+#: model_terms:ir.ui.view,arch_db:website_support.website_support_ticket_view_form
+msgid "Request Approval"
+msgstr "Freigabe der Anfrage"
+
+#. module: website_support
+#: model:ir.model.fields,help:website_support.field_website_support_settings__use_propagation_minimum_delta
+msgid ""
+"Rescheduling applies to any chain of operations (e.g. Make To Order, Pick Pack Ship). In the case of MTO sales, a vendor delay (updated incoming date) impacts the expected delivery date to the customer. \n"
+" This option allows to not propagate the rescheduling if the change is not critical."
+msgstr ""
+"Die Umplanung bezieht sich auf jede Vorgangskette (z. B. Auftragsbeschaffung (MTO), Pick + Pack + Ship). Im Falle von MTO-Verkäufen wirkt sich eine Verzögerung seitens des Lieferanten (aktualisiertes Eingangsdatum) auf das erwartete Lieferdatum an den Kunden aus. \n"
+"Diese Option ermöglicht es, die Umplanung nicht zu übertragen, wenn die Änderung nicht kritisch ist."
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_procurement_jit
+msgid "Reservation"
+msgstr "Reservierung"
+
+#. module: website_support
+#: model:ir.model.fields,help:website_support.field_website_support_settings__module_procurement_jit
+msgid "Reserving products manually in delivery orders or by running the scheduler is advised to better manage priorities in case of long customer lead times or/and frequent stock-outs."
+msgstr "Es empfiehlt sich, in Lieferaufträgen Produkte manuell zu reservieren oder den Zeitplaner auszuführen, um die Prioritäten im Falle von langen Auslieferungszeiten oder häufigen Engpässen besser im Blick zu behalten."
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla_rule__response_time
+msgid "Response Time"
+msgstr "Reaktionszeit"
+
+#. module: website_support
+#: model:ir.model.fields,help:website_support.field_website_support_ticket_category__access_group_ids
+msgid "Restrict which users can select the category on the website form, none = everyone"
+msgstr ""
+
+#. module: website_support
+#: model_terms:ir.ui.view,arch_db:website_support.website_support_ticket_view_form
+msgid "Resume SLA"
+msgstr "SLA fortsetzen"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_account_deferred_revenue
+msgid "Revenue Recognition"
+msgstr "Umsatzrealisierung"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_contact__role
 msgid "Role"
 msgstr "Rolle"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.support_help_pages
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla__rule_ids
+msgid "Rules"
+msgstr "Regeln"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_account_sepa
+msgid "SEPA Credit Transfer (SCT)"
+msgstr "SEPA-Überweisung (SCT)"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_res_partner__sla_id
+#: model:ir.model.fields,field_description:website_support.field_res_users__sla_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla_alert__vsa_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla_rule__vsa_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__sla_id
+#: model_terms:ir.ui.view,arch_db:website_support.website_support_ticket_view_form
+msgid "SLA"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__sla_active
+msgid "SLA Active"
+msgstr "SLA Aktiv"
+
+#. module: website_support
+#: model:mail.template,subject:website_support.support_ticket_sla_alert
+msgid "SLA Alert"
+msgstr "SLA Alarm"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__sla_alert_ids
+msgid "SLA Alerts"
+msgstr "SLA Alarme"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla_rule_condition__wssr_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__sla_rule_id
+msgid "SLA Rule"
+msgstr "SLA Regel"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__sla_timer
+msgid "SLA Time Remaining"
+msgstr "SLA Verbleibende Zeit"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__sla_timer_format
+msgid "SLA Timer Format"
+msgstr ""
+
+#. module: website_support
+#: model:ir.ui.menu,name:website_support.website_support_sla_menu
+msgid "SLA's"
+msgstr ""
+
+#. module: website_support
+#: model_terms:ir.ui.view,arch_db:website_support.support_help_pages
 msgid "Search"
 msgstr "Suchen"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.website_support_ticket_compose_view_form
+#: model_terms:ir.ui.view,arch_db:website_support.website_support_ticket_compose_view_form
 msgid "Send"
 msgstr "Senden"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.website_support_ticket_view_form
-msgid "Send Survey"
-msgstr "Send Umfrage"
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__invoice_is_email
+msgid "Send Email"
+msgstr "E-Mail versenden"
 
 #. module: website_support
-#: model:ir.model.fields,help:website_support.field_email_template_preview_built_in
-#: model:ir.model.fields,help:website_support.field_mail_template_built_in
+#: model_terms:ir.ui.view,arch_db:website_support.website_support_ticket_view_form
+msgid "Send Survey"
+msgstr "Umfrage Senden"
+
+#. module: website_support
+#: model:ir.model.fields,help:website_support.field_email_template_preview__built_in
+#: model:ir.model.fields,help:website_support.field_mail_template__built_in
 msgid "Seperates email templates created by modules and ones created by users"
 msgstr "E-Mail-Vorlagen, die von Modulen und von Benutzern erstellten erstellt wurden"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_groups_sequence
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_page_sequence
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_categories_sequence
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_priority_sequence
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory_sequence
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_group__sequence
+#: model:ir.model.fields,field_description:website_support.field_website_support_help_page__sequence
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_category__sequence
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_priority__sequence
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory__sequence
 msgid "Sequence"
 msgstr "Reihenfolge"
 
@@ -1231,9 +2349,76 @@ msgid "Settings"
 msgstr "Einstellungen"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.account_create
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__company_share_partner
+msgid "Share partners to all companies"
+msgstr "Veröffentlichen Sie Ihre Geschäftspartner"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__company_share_product
+msgid "Share product to all companies"
+msgstr "Nutze Produkt in allen Unternehmen"
+
+#. module: website_support
+#: model:ir.model.fields,help:website_support.field_website_support_settings__company_share_partner
+msgid ""
+"Share your partners to all companies defined in your instance.\n"
+" * Checked : Partners are visible for every companies, even if a company is defined on the partner.\n"
+" * Unchecked : Each company can see only its partner (partners where company is defined). Partners not related to a company are visible for all companies."
+msgstr ""
+"Veröffentlichen Sie Ihre Partner in der aktuellen Instanz.\n"
+"* Angekreuzt: Partner sind für alle Unternehmen sichtbar, auch wenn ein Unternehmen für diesen Partner definiert ist\n"
+"* Nicht angekreuzt: Jedes Unternehmen sieht nur seine Partner (d.h. Partner die für dieses Unternehmen definiert sind). Partner die keinen Bezug zu einem Unternehmen haben sind für alle Unternehmen sichtbar."
+
+#. module: website_support
+#: model:ir.model.fields,help:website_support.field_website_support_settings__company_share_product
+msgid ""
+"Share your product to all companies defined in your instance.\n"
+" * Checked : Product are visible for every company, even if a company is defined on the partner.\n"
+" * Unchecked : Each company can see only its product (product where company is defined). Product not related to a company are visible for all companies."
+msgstr ""
+"Nutze Produkt in allen Unternehmen Ihrer Instanz.\n"
+" * Gewählt : Produkte sind für jedes Unternehmen sichtbar, selbst dann, wenn dieses beim Partner angelegt ist.\n"
+" * Abgewählt : Jedes Unternehmen sieht nur eigene Produkte (wenn das Unternehmen festgelegt ist). Produkte, bei denen das Unternehmen nicht festgelegt ist, sind für alle Unternehmen sichtbar."
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__show_effect
+msgid "Show Effect"
+msgstr "Effekt Zeigen"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_hr_org_chart
+msgid "Show Organizational Chart"
+msgstr "Organigramm anzeigen"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__group_show_line_subtotals_tax_included
+msgid "Show line subtotals with taxes (B2C)"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__group_show_line_subtotals_tax_excluded
+msgid "Show line subtotals without taxes (B2B)"
+msgstr "Die Zwischensummen ohne Steuern anzeigen (B2B)"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__group_product_pricelist
+msgid "Show pricelists On Products"
+msgstr "Preislisten bei Produkten anzeigen"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__group_pricelist_item
+msgid "Show pricelists to customers"
+msgstr "Kunden die Preislisten anzeigen"
+
+#. module: website_support
+#: model_terms:ir.ui.view,arch_db:website_support.account_create
 msgid "Sign up"
 msgstr "Registrieren"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__specific_user_account
+msgid "Specific User Account"
+msgstr "Spezifischer Benutzeracount"
 
 #. module: website_support
 #: selection:website.support.ticket.message,by:0
@@ -1251,89 +2436,117 @@ msgid "Staff Replied"
 msgstr "Durch Mitarbeiter beantwortet"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_settings_staff_reply_email_template_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__staff_reply_email_template_id
 msgid "Staff Reply Email Template"
 msgstr "Mitarbeiter Antwort Email Template"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_state
-#: model:ir.ui.view,arch_db:website_support.support_ticket_view_list
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__state_id
+#: model_terms:ir.ui.view,arch_db:website_support.support_ticket_view_list
 msgid "State"
 msgstr "Ticket Status"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_states_name
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_state__name
 msgid "State Name"
 msgstr "Status Name"
 
 #. module: website_support
-#: model:ir.ui.menu,name:website_support.website_support_ticket_states_menu
+#: model:ir.ui.menu,name:website_support.website_support_ticket_state_menu
 msgid "States"
 msgstr "Status"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_sub_category_ids
+#: selection:website.support.ticket.subcategory.field,dropbox_type:0
+msgid "Static"
+msgstr "Statisch"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__group_stock_multi_locations
+msgid "Storage Locations"
+msgstr "Lagerorte"
+
+#. module: website_support
+#: model:ir.model.fields,help:website_support.field_website_support_settings__group_stock_multi_locations
+msgid "Store products in specific locations of your warehouse (e.g. bins, racks) and to track inventory accordingly."
+msgstr "Lagern Sie Produkte an bestimmten Orten in Ihrem Lager (z. B. in speziellen Schränken und Staufächern) und verfolgen Sie den Bestand entsprechend."
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_department__sub_category_ids
 #: model:ir.ui.menu,name:website_support.website_support_ticket_subcategory_menu
 msgid "Sub Categories"
 msgstr "Unterkategorien"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_sub_category_month_ids
+#: model:ir.model.fields,field_description:website_support.field_website_support_department__sub_category_month_ids
 msgid "Sub Categories Month"
-msgstr "Unterkategorien Month"
+msgstr "Unterkategorien (Monat)"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_sub_category_week_ids
+#: model:ir.model.fields,field_description:website_support.field_website_support_department__sub_category_week_ids
 msgid "Sub Categories Week"
-msgstr "Unterkategorien Week"
+msgstr "Unterkategorien (Woche)"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_subcategory_subcategory_id
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_sub_category_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_subcategory__subcategory_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla_rule_condition__subcategory_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__sub_category_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory_field__wsts_id
+#: selection:website.support.sla.rule.condition,type:0
 msgid "Sub Category"
 msgstr "Unterkategorie"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory_name
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory__name
 msgid "Sub Category Name"
 msgstr "Unterkategorie Name"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.support_ticket_reporting
+#: model_terms:ir.ui.view,arch_db:website_support.support_ticket_reporting
 msgid "Sub Category Usage (Top 5)"
-msgstr "Unterkategorien Usage (Top 5)"
+msgstr "Unterkategorien Nutzung (Top 5)"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_compose_subject
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subject
-#: model:ir.ui.view,arch_db:website_support.support_submit_ticket
-#: model:ir.ui.view,arch_db:website_support.support_ticket_view_list
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__group_subtask_project
+msgid "Sub-tasks"
+msgstr "Unteraufgaben"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory_field_value__wstsf_id
+msgid "Subcategory Field"
+msgstr "Unterkategorie (Feld)"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__subject
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_compose__subject
+#: model_terms:ir.ui.view,arch_db:website_support.support_submit_ticket
+#: model_terms:ir.ui.view,arch_db:website_support.support_ticket_view_list
 msgid "Subject"
 msgstr "Betreff"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.support_ticket_view
+#: model_terms:ir.ui.view,arch_db:website_support.support_ticket_view
 msgid "Submit"
 msgstr "Absenden"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.help_page
-#: model:ir.ui.view,arch_db:website_support.support_ticket_survey_page
+#: model_terms:ir.ui.view,arch_db:website_support.help_page
+#: model_terms:ir.ui.view,arch_db:website_support.support_ticket_survey_page
 msgid "Submit Feedback"
 msgstr "Feedback einreichen"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.support_submit_ticket
+#: model_terms:ir.ui.view,arch_db:website_support.support_submit_ticket
 msgid "Submit Support Ticket"
 msgstr "Support-Ticket einreichen"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.support_submit_ticket
+#: model_terms:ir.ui.view,arch_db:website_support.support_submit_ticket
 msgid "Submit Ticket"
 msgstr "Ticket  einreichen"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.support_help_pages
+#: model_terms:ir.ui.view,arch_db:website_support.support_help_pages
 msgid "Submit a Ticket"
 msgstr "Ein Ticket  einreichen"
 
@@ -1343,38 +2556,55 @@ msgid "Support"
 msgstr "Support"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_support_comment
+#: model:res.groups,name:website_support.support_group
+msgid "Support Client"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__support_comment
 msgid "Support Comment"
 msgstr "Support Kommentar"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_support_email
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__support_email
 msgid "Support Email"
 msgstr "Support Email"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_support_rating
+#: model:res.groups,name:website_support.support_manager
+msgid "Support Manager"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__support_rating
 msgid "Support Rating"
-msgstr "Support Rating"
+msgstr "Support Bewertung"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.view_partner_form_inherit_website_module
+#: model:ir.actions.act_window,name:website_support.website_support_sla_action
+msgid "Support SLA"
+msgstr ""
+
+#. module: website_support
+#: model:res.groups,name:website_support.support_staff
+msgid "Support Staff"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_approval__wst_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_field__wst_id
+#: model_terms:ir.ui.view,arch_db:website_support.view_partner_form_inherit_website_module
 msgid "Support Ticket"
-msgstr "Support Ticket"
+msgstr ""
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_medical_abstract_entity_stp_ids
-#: model:ir.model.fields,field_description:website_support.field_medical_center_stp_ids
-#: model:ir.model.fields,field_description:website_support.field_medical_patient_stp_ids
-#: model:ir.model.fields,field_description:website_support.field_medical_physician_stp_ids
-#: model:ir.model.fields,field_description:website_support.field_medical_practitioner_stp_ids
-#: model:ir.model.fields,field_description:website_support.field_res_partner_stp_ids
-#: model:ir.model.fields,field_description:website_support.field_res_users_stp_ids
-msgid "Support Ticket Access Accounts"
-msgstr "Support Ticket Access Accounts"
+#: model:mail.template,subject:website_support.support_ticket_approval
+#: model:mail.template,subject:website_support.support_ticket_approval_user
+msgid "Support Ticket Approval (#${object.ticket_number or object.id})"
+msgstr ""
 
 #. module: website_support
-#: model:ir.actions.act_window,name:website_support.website_support_ticket_categories_action
+#: model:ir.actions.act_window,name:website_support.website_support_ticket_category_action
 msgid "Support Ticket Categories"
 msgstr "Support Ticket Kategorien"
 
@@ -1391,40 +2621,34 @@ msgstr "Support Ticket Priorititäten"
 #. module: website_support
 #: model:ir.actions.act_window,name:website_support.website_support_settings_action
 msgid "Support Ticket Settings"
-msgstr "Support Ticket Settings"
+msgstr "Support Ticket Einstellungen"
 
 #. module: website_support
-#: model:ir.actions.act_window,name:website_support.website_support_ticket_states_action
+#: model:ir.actions.act_window,name:website_support.website_support_ticket_state_action
 msgid "Support Ticket States"
 msgstr "Support Ticket Statuse"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_medical_abstract_entity_support_ticket_string
-#: model:ir.model.fields,field_description:website_support.field_medical_center_support_ticket_string
-#: model:ir.model.fields,field_description:website_support.field_medical_patient_support_ticket_string
-#: model:ir.model.fields,field_description:website_support.field_medical_physician_support_ticket_string
-#: model:ir.model.fields,field_description:website_support.field_medical_practitioner_support_ticket_string
-#: model:ir.model.fields,field_description:website_support.field_res_partner_support_ticket_string
-#: model:ir.model.fields,field_description:website_support.field_res_users_support_ticket_string
+#: model:ir.model.fields,field_description:website_support.field_res_partner__support_ticket_string
+#: model:ir.model.fields,field_description:website_support.field_res_users__support_ticket_string
 msgid "Support Ticket String"
 msgstr "Support Ticket Text"
 
 #. module: website_support
 #: model:ir.actions.act_window,name:website_support.website_support_ticket_subcategory_action
-msgid "Support Ticket Subcategory"
-msgstr "Support Ticket Subcategory"
+msgid "Support Ticket Sub Categories"
+msgstr "Support Ticket Unterkategorien"
 
 #. module: website_support
 #: model:mail.template,subject:website_support.support_ticket_survey
 msgid "Support Ticket Survey (#${object.ticket_number or object.id})"
-msgstr "Support Ticket Survey (#${object.ticket_number or object.id})"
+msgstr "Support Ticket Umfrage (#${object.ticket_number or object.id})"
 
 #. module: website_support
 #: model:ir.actions.act_window,name:website_support.website_support_ticket_action
 #: model:ir.actions.act_window,name:website_support.website_support_ticket_action_partner
-#: model:ir.ui.menu,name:website_support.website_support_config_parent_menu
 #: model:ir.ui.menu,name:website_support.website_support_ticket_menu
-#: model:ir.ui.view,arch_db:website_support.view_partner_form_inherit_website_module
+#: model_terms:ir.ui.view,arch_db:website_support.view_partner_form_inherit_website_module
 msgid "Support Tickets"
 msgstr "Support Tickets"
 
@@ -1434,90 +2658,229 @@ msgid "Support Tickets Compose"
 msgstr "Support Tickets erstellen"
 
 #. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_tag__name
+msgid "Tag Name"
+msgstr "Tag Bezeichnung"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__tag_ids
+#: model:ir.ui.menu,name:website_support.website_support_ticket_tag_menu
+msgid "Tags"
+msgstr "Stichwörter"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_hr_timesheet
+msgid "Task Logs"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__tax_cash_basis_journal_id
+msgid "Tax Cash Basis Journal"
+msgstr "Journal für die Besteuerung nach vereinnahmten Entgelten"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__tax_calculation_rounding_method
+msgid "Tax calculation rounding method"
+msgstr "Steuerliches Rundungsverfahren"
+
+#. module: website_support
+#: selection:website.support.settings,show_line_subtotals_tax_selection:0
+msgid "Tax-Excluded"
+msgstr ""
+
+#. module: website_support
+#: selection:website.support.settings,show_line_subtotals_tax_selection:0
+msgid "Tax-Included"
+msgstr ""
+
+#. module: website_support
 #: model:website.support.ticket.category,name:website_support.website_support_tech_support
 msgid "Technical Support"
 msgstr "Technischer Support"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.support_survey_thank_you
-#: model:ir.ui.view,arch_db:website_support.support_thank_you
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__chart_template_id
+msgid "Template"
+msgstr "Vorlage"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__auth_signup_template_user_id
+msgid "Template user for new users created through signup"
+msgstr "Vorlage 'Benutzer' für neue registrierte Benutzer"
+
+#. module: website_support
+#: selection:website.support.ticket.subcategory.field,type:0
+msgid "Textbox"
+msgstr ""
+
+#. module: website_support
+#: model_terms:ir.ui.view,arch_db:website_support.support_survey_thank_you
+#: model_terms:ir.ui.view,arch_db:website_support.support_thank_you
 msgid "Thank You"
-msgstr "Danke"
+msgstr "Vielen Dank"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.support_survey_thank_you
+#: model_terms:ir.ui.view,arch_db:website_support.support_survey_thank_you
 msgid "Thank you for you feedback about our support"
-msgstr "Vielen Dank für Ihr Feedback zu unserer Unterstützung"
+msgstr "Vielen Dank für Ihr Feedback zu unserem Support"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_ticket_color
+#: model:ir.model.fields,help:website_support.field_website_support_settings__currency_exchange_journal_id
+msgid "The accounting journal where automatic exchange differences will be registered"
+msgstr "Das Buchungsjournal, in dem automatische Wechselkursdifferenzen registriert werden"
+
+#. module: website_support
+#: model:ir.model.fields,help:website_support.field_website_support_settings__account_bank_reconciliation_start
+msgid ""
+"The bank reconciliation widget won't ask to reconcile payments older than this date.\n"
+"               This is useful if you install accounting after having used invoicing for some time and\n"
+"               don't want to reconcile all the past payments with bank statements."
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,help:website_support.field_website_support_ticket_state__mail_template_id
+msgid "The mail message that the customer gets when the state changes"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,help:website_support.field_website_support_settings__module_account_batch_payment
+msgid ""
+"This allows you grouping payments into a single batch and eases the reconciliation process.\n"
+"-This installs the account_batch_payment module."
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,help:website_support.field_website_support_settings__favicon
+msgid "This field holds the image used to display a favicon on the website."
+msgstr "Dieses Feld enthält das Bild, welches als Favicon auf der Website angezeigt wird."
+
+#. module: website_support
+#: model:ir.model.fields,help:website_support.field_website_support_settings__website_default_lang_code
+msgid "This field is used to set/get locales for user"
+msgstr "Mit diesem Feld wird die \"locale\" (Ländereinstellungen) des Benutzers festgelegt"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__ticket_color
 msgid "Ticket Color"
 msgstr "Ticket Farbe"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_medical_abstract_entity_support_ticket_count
-#: model:ir.model.fields,field_description:website_support.field_medical_center_support_ticket_count
-#: model:ir.model.fields,field_description:website_support.field_medical_patient_support_ticket_count
-#: model:ir.model.fields,field_description:website_support.field_medical_physician_support_ticket_count
-#: model:ir.model.fields,field_description:website_support.field_medical_practitioner_support_ticket_count
-#: model:ir.model.fields,field_description:website_support.field_res_partner_support_ticket_count
-#: model:ir.model.fields,field_description:website_support.field_res_users_support_ticket_count
+#: model:ir.model.fields,field_description:website_support.field_res_partner__support_ticket_count
+#: model:ir.model.fields,field_description:website_support.field_res_users__support_ticket_count
 msgid "Ticket Count"
 msgstr "Ticket Anzahl"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_close_ticket_id
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_compose_ticket_id
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_message_ticket_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_close__ticket_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_compose__ticket_id
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_message__ticket_id
 msgid "Ticket ID"
 msgstr "Ticket ID"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_ticket_number
-#: model:ir.ui.view,arch_db:website_support.website_support_ticket_view_tree
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__ticket_number
 msgid "Ticket Number"
-msgstr "Ticket Number"
+msgstr "Ticket Nummer"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_ticket_number_display
-msgid "Ticket Number Display"
-msgstr "Ticket Number Display"
+#: model_terms:ir.ui.view,arch_db:website_support.website_support_settings_view_form
+msgid "Ticket Settings"
+msgstr "Ticketeinstellungen"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_medical_abstract_entity_support_ticket_ids
-#: model:ir.model.fields,field_description:website_support.field_medical_center_support_ticket_ids
-#: model:ir.model.fields,field_description:website_support.field_medical_patient_support_ticket_ids
-#: model:ir.model.fields,field_description:website_support.field_medical_physician_support_ticket_ids
-#: model:ir.model.fields,field_description:website_support.field_medical_practitioner_support_ticket_ids
-#: model:ir.model.fields,field_description:website_support.field_res_partner_support_ticket_ids
-#: model:ir.model.fields,field_description:website_support.field_res_users_support_ticket_ids
+#: model:ir.model.fields,field_description:website_support.field_res_partner__support_ticket_ids
+#: model:ir.model.fields,field_description:website_support.field_res_users__support_ticket_ids
 msgid "Tickets"
 msgstr "Tickets"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_time_to_close
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__time_to_close
 msgid "Time to close (seconds)"
-msgstr "Time to close (seconds)"
+msgstr ""
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.support_ticket_reporting
+#: model_terms:ir.ui.view,arch_db:website_support.support_ticket_reporting
 msgid "Total Support Tickets:"
-msgstr "Total Support Tickets:"
+msgstr "Support Tickets insgesamt:"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_help_page_url_generated
-msgid "URL"
-msgstr "URL"
+#: model:ir.model.fields,help:website_support.field_website_support_settings__module_product_expiry
+msgid ""
+"Track following dates on lots & serial numbers: best before, removal, end of life, alert. \n"
+" Such dates are set automatically at lot/serial number creation based on values set on the product (in days)."
+msgstr ""
+"Verfolgen Sie die folgenden Daten auf Los- und Seriennummern: Mindestens haltbar bis, Entnahme, Verwendbar bis, Warnung. \n"
+"Diese Daten werden automatisch bei der Erstellung von Los-/Seriennummern festgelegt basierend auf für das Produkt festgelegten Werten (in Tagen)."
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_unattended
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_base_gengo
+msgid "Translate Your Website with Gengo"
+msgstr "Übersetzen Sie Ihre Website mit Gengo"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__social_twitter
+msgid "Twitter Account"
+msgstr "Twitter Konto"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla_alert__type
+#: model:ir.model.fields,field_description:website_support.field_website_support_sla_rule_condition__type
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory_field__type
+msgid "Type"
+msgstr "Typ"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_delivery_ups
+msgid "UPS Connector"
+msgstr "UPS Konnektor"
+
+#. module: website_support
+#: model:ir.model.fields,help:website_support.field_website_support_settings__cdn_filters
+msgid "URL matching those filters will be rewritten using the CDN Base URL"
+msgstr "URL, die über diese Filter erkannt werden, werden mit der CDN Basis URL überschrieben"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_delivery_usps
+msgid "USPS Connector"
+msgstr "USPS Konnektor"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__unattended
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_state__unattended
 msgid "Unattended"
-msgstr "Unattended"
+msgstr "Unbeobachtet"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.website_support_ticket_view_search
+#: model_terms:ir.ui.view,arch_db:website_support.website_support_ticket_view_search
 msgid "Unattended Tickets"
-msgstr "Unattended Tickets"
+msgstr "Unbeobachtete Tickets"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__group_uom
+msgid "Units of Measure"
+msgstr "Mengeneinheiten"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__message_unread
+msgid "Unread Messages"
+msgstr "Ungelesene Nachrichten"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Zähler der ungelesenen Nachrichten"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_web_unsplash
+msgid "Unsplash Image Library"
+msgstr ""
+
+#. module: website_support
+#: model:ir.actions.server,name:website_support.update_sla_timer_ir_actions_server
+#: model:ir.cron,cron_name:website_support.update_sla_timer
+#: model:ir.cron,name:website_support.update_sla_timer
+msgid "Update SLA Timer"
+msgstr "SLA Timer aktualisieren"
 
 #. module: website_support
 #: model:website.support.ticket.priority,name:website_support.urgent
@@ -1525,8 +2888,43 @@ msgid "Urgent"
 msgstr "Wichtig"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_contact_user_id
-#: model:ir.ui.view,arch_db:website_support.website_support_ticket_view_search
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__group_project_rating
+msgid "Use Rating on Project"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_account_sepa_direct_debit
+msgid "Use SEPA Direct Debit"
+msgstr "SEPA-Lastschrift verwenden"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_account_batch_payment
+msgid "Use batch payments"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_auth_oauth
+msgid "Use external authentication providers (OAuth)"
+msgstr "Verwenden Sie externe Authentifizierungsanbieter (OAuth)"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__group_sale_pricelist
+msgid "Use pricelists to adapt your price per customers"
+msgstr "Benutzen Sie Preislisten, um den Preis auf Kundenbasis anzupassen"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__group_products_in_bills
+msgid "Use products in vendor bills"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,help:website_support.field_website_support_settings__website_country_group_ids
+msgid "Used when multiple websites have the same domain."
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_contact__user_id
+#: model_terms:ir.ui.view,arch_db:website_support.website_support_ticket_view_search
 msgid "User"
 msgstr "Benutzer"
 
@@ -1536,37 +2934,83 @@ msgid "Users"
 msgstr "Benutzer"
 
 #. module: website_support
-#: model:ir.model.fields,field_description:website_support.field_website_support_department_role_view_department_tickets
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_field__value
+msgid "Value"
+msgstr "Wert"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket_subcategory_field__value_ids
+msgid "Values"
+msgstr "Werte"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__group_product_variant
+msgid "Variants and Options"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_department_role__view_department_tickets
 msgid "View Department Tickets"
-msgstr "View Department Tickets"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__group_warning_stock
+msgid "Warnings for Stock"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__group_warning_account
+msgid "Warnings in Invoices"
+msgstr ""
 
 #. module: website_support
 #: model:mail.template,subject:website_support.support_ticket_new
-msgid ""
-"We have received your support ticket '${object.subject}' and will get back "
-"to you shortly"
-msgstr ""
-"Wir haben Ihr Support-Ticket '${object.subject}' erhalten und werden uns in "
-"Kürze bei Ihnen melden"
+msgid "We have received your support ticket '${object.subject}' and will get back to you shortly"
+msgstr "Wir haben Ihr Support-Ticket '${object.subject}' erhalten und werden uns in Kürze bei Ihnen melden"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.support_thank_you
+#: model_terms:ir.ui.view,arch_db:website_support.support_thank_you
 msgid "We will get back to you shortly"
-msgstr "We will get back to you shortly"
+msgstr "Wir werden uns in Kürze bei Ihnen melden"
 
 #. module: website_support
-#: model:ir.actions.act_window,name:website_support.website_support_help_groups_action
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__website_company_id
+msgid "Website Company"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__website_domain
+msgid "Website Domain"
+msgstr ""
+
+#. module: website_support
+#: model_terms:ir.ui.view,arch_db:website_support.website_support_settings_view_form
+msgid "Website Form Settings"
+msgstr ""
+
+#. module: website_support
+#: model:ir.actions.act_window,name:website_support.website_support_help_group_action
 msgid "Website Help Groups"
-msgstr "Website Help Groups"
+msgstr ""
 
 #. module: website_support
 #: model:ir.actions.act_window,name:website_support.website_support_help_page_action
 msgid "Website Help Pages"
-msgstr "Website Help Pages"
+msgstr ""
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.view_users_form_inherit_website_support
-#: model:res.groups,name:website_support.support_group
+#: model:ir.model.fields,field_description:website_support.field_website_support_ticket__website_message_ids
+msgid "Website Messages"
+msgstr "Website-Nachrichten"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__website_name
+msgid "Website Name"
+msgstr "Website-Name"
+
+#. module: website_support
+#: model:ir.module.category,name:website_support.support_application
+#: model_terms:ir.ui.view,arch_db:website_support.view_users_form_inherit_website_support
 msgid "Website Support"
 msgstr "Website Support"
 
@@ -1576,22 +3020,37 @@ msgid "Website Support Ticket"
 msgstr "Website Support Ticket"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.support_ticket_view_list
+#: model:ir.model.fields,help:website_support.field_website_support_ticket__website_message_ids
+msgid "Website communication history"
+msgstr "Website-Kommunikationshistorie"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__product_weight_in_lbs
+msgid "Weight unit of measure"
+msgstr ""
+
+#. module: website_support
+#: model_terms:ir.ui.view,arch_db:website_support.support_ticket_view_list
+msgid "You have no change requests"
+msgstr ""
+
+#. module: website_support
+#: model_terms:ir.ui.view,arch_db:website_support.support_ticket_view_list
 msgid "You have no support tickets"
 msgstr "Sie haben keine Support-Tickets"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.account_create
+#: model_terms:ir.ui.view,arch_db:website_support.account_create
 msgid "Your Email"
 msgstr "Ihre E-Mail"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.support_ticket_survey_page
+#: model_terms:ir.ui.view,arch_db:website_support.support_ticket_survey_page
 msgid "Your Feedback"
 msgstr "Ihr Feedback"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.account_create
+#: model_terms:ir.ui.view,arch_db:website_support.account_create
 msgid "Your Name"
 msgstr "Ihr Name"
 
@@ -1606,9 +3065,39 @@ msgid "Your support ticket has been updated"
 msgstr "Ihr Supportticket wurde upgedated"
 
 #. module: website_support
-#: model:ir.ui.view,arch_db:website_support.account_create
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__social_youtube
+msgid "Youtube Account"
+msgstr "Youtube Konto"
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__module_delivery_bpost
+msgid "bpost Connector"
+msgstr ""
+
+#. module: website_support
+#: model_terms:ir.ui.view,arch_db:website_support.account_create
 msgid "e.g. John Doe"
 msgstr "z.B. John Doe"
+
+#. module: website_support
+#: model_terms:ir.ui.view,arch_db:website_support.support_submit_ticket
+msgid "reCAPTCHA"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__google_captcha_client_key
+msgid "reCAPTCHA Client Key"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__google_captcha_secret_key
+msgid "reCAPTCHA Secret Key"
+msgstr ""
+
+#. module: website_support
+#: model:ir.model.fields,field_description:website_support.field_website_support_settings__website_id
+msgid "website"
+msgstr "Website"
 
 #. module: website_support
 #: model:ir.model,name:website_support.model_website_support_department
